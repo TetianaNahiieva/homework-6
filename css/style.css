@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+body {
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+.header { 
+    margin-bottom: 47px;
+    padding-top: 60px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header button {
+    min-width: 98px;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #22322F;
+    border-radius: 8px;
+    background-color: transparent;
+}
+.header button::before {
+    content: url('../img/icon-\ Menu.jpg');
+    width: 12px;
+    height: 12px;
+    margin-right: 13px;
+}
+.header ul {
+    display: none;
+}
+.hero {
+    padding-bottom: 100px;
+}
+.hero .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.hero_text {
+    order: 1;
+}
+.hero_text h1 {
+    font-size: 27px;
+    line-height: 43px;
+    color: #22322F;
+    margin-bottom: 25px;
+}
+.hero_text p {
+    font-size: 16px;
+    color: #22322F;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+}
+.hero_text button {
+    min-width: 203px;
+    min-height: 44px;
+    font-size: 16px;
+    font-weight: 700px;
+    border: 2px solid #000000;
+    background-color: #71a89e;
+    border-radius: 8px;
+    color: #fff;
+}
+.hero_illustration {
+    margin-bottom: 248px;
+}
+.hero_illustration img {
+    max-width: 100%;
+}
+    
+@media only screen and (min-width: 1200px) {
+    .hero .container {
+        flex-direction: row;
+        justify-content: flex-start;
+}
+.header button {
+    display: none;    
+    }
+    .container ul {
+        display: flex;
+        flex: content;
+    }
+    .container li {
+        list-style: none;
+        color: #303031;
+      }
+      .container span a {
+        color: #71a89e;
+    }
+      .container a {
+        padding: 10px;
+    }
+    .hero_text h1 {
+        padding-top: 244px;
+     }
+     .hero_text {
+        padding-top: 247px;
+        width: 257px;
+        height: 551px;
+    }
+     .hero_illustration img {
+        max-width: 100%;
+        width: 617px;
+    }
+    .hero_illustration {
+        padding-left: 50px;
+        margin-bottom: 0px;
+    }
+    .hero_illustration {
+        order: 1;
+    }
+    
+    
+    
+    
+    
+    
+}
